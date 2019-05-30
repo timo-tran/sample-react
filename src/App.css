@@ -1,0 +1,343 @@
+html, body {
+  height: 100%;
+}
+
+#root, .ant-layout {
+}
+
+.MainLayout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Sidemenu */
+.SideMenu {
+  width: 100px;
+  background-color: #F4F8F9;
+  border-right: 1px solid lightgray;
+}
+
+.SideMenu .Logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SideMenu .Menu {
+  margin-top: 50px;
+}
+
+.SideMenu .Menu .MenuItem {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid transparent;
+}
+
+.SideMenu .Menu .MenuItem.Selected {
+  border-left: 5px solid blue;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+/* Content */
+.MainContent {
+  width: calc(100% - 100px);
+}
+.TodayFont{
+  font-size: 25px;
+  border-bottom: 4px solid #FF4DA1FF;
+  margin-left: 20px;
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.Header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Header .SearchInput {
+  width: 300px;
+  height: 40px;
+  margin-left: 70px;
+}
+
+.Header .SearchInput .ant-input {
+  margin-left: 25px;
+  border: none !important;
+  font-size: 25px;
+}
+
+.Header .SearchInput .ant-input:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Header .Avatar {
+  margin-right: 30px;
+}
+
+/* Content */
+.Content {
+  padding: 30px;
+}
+
+.ArticleInfoCardContainer {
+  display: flex;
+}
+
+.ArticleInfoCard {
+  width: 350px;
+  height: 113px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  flex:inherit;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArticleInfoCard:hover {
+  opacity: 1.0;
+  box-shadow: 0 4px 9px 0 rgba(0,0,0,0.02);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-justify-content-center {
+  justify-content: center;
+}
+
+.d-justify-between {
+  justify-content: space-between;
+}
+
+.d-align-items-center {
+  align-items: center;
+}
+.popover:hover{
+  cursor: pointer;
+}
+
+.width-100 {
+  width: 100%;
+}
+.width-30{
+  width:30%;
+}
+.width-50{
+  width:50%;
+}
+
+/* List */
+.List{
+}
+.ListInfoCard {
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.List .ListInfoCard > div > div {
+  padding: 0px 10px;
+}
+.List .ListInfoCard .Avatar {
+  margin-right: 10px;
+}
+.ListTagContainer {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ListTag {
+  background: #F4F8F9;
+  border-radius: 3px;
+  text-align: center;
+  border-style:none;
+  color:black;
+  margin: 2px 3px;
+  padding: 3px;
+}
+.ListMarkAsRead{
+  height: 30px;
+  background: #4DA1FF;
+  border-radius: 3px;
+  text-align: center;
+  border-style:none;
+  font-family: Roboto-Regular;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0;  
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+.ListMarkRed{
+  background-image: linear-gradient(-180deg, #FF7878 0%, #FF4F4F 100%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;  
+  top: 10px;
+  right: 10px;
+}
+.ListAuthorFont{
+  font-family: Helvetica;
+  font-size: 17px;
+  color: #323C47;
+  letter-spacing: -0.19px;
+  margin-bottom: 0px;
+}
+.ListMailFont{
+  font-family: Helvetica;
+  font-size: 11px;
+  color: rgba(50,60,71,0.50);
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+.ListJobTileFont{
+  font-family: Helvetica;
+  font-size: 13px;
+  color: rgba(50,60,71,0.61);
+  letter-spacing: -0.1px;  
+}
+.ListTitleFont{
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  color: #323C47;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.ListDescFont{
+  font-family: Roboto-Medium;
+  font-size: 17px;
+  color: rgba(50,60,71,0.70);
+  letter-spacing: 0;  
+}
+
+/* Card */
+.CardInfo{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  padding: 35px;
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.02);
+}
+.ant-col-12 .Avatar{
+  width: 150px;
+  height: 150px;
+}
+.CardFontBold{
+  font-family: Roboto-Medium;
+  font-size: 24px;
+  color: #323C47;
+  letter-spacing: 0;
+}
+.CardFont{
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: rgba(50,60,71,0.70);
+  letter-spacing: 0;
+  line-height: 20px;  
+}
+.CardMarkRed{
+  background-image: linear-gradient(-180deg, #FF7878 0%, #FF4F4F 100%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  right: -290px;
+  top:-300px;
+  position: relative;  
+}
+.block-with-text {
+  width: 280px;
+  height: 100px;
+  overflow: hidden;
+  position: relative; 
+  text-align: left;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+.block-with-text-list {
+  height: 30px;
+  overflow: hidden;
+  position: relative; 
+  line-height: 1em;
+  text-align: left;
+}
+.block-with-text-list:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text-list:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+
+
+.block-with-text-list1 {
+  height: 30px;
+  overflow: hidden;
+  position: relative; 
+  text-align: left;
+}
+.block-with-text-list1:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text-list1:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
